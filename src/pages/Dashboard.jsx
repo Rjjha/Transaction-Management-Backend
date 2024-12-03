@@ -25,8 +25,8 @@ const Dashboard = () => {
         page: currentPage,
         userId: filters.userId,
         userName: filters.userName,
-        startDate: filters.startDate,
-        endDate: filters.endDate,
+        dateStart: filters.startDate,
+        dateEnd: filters.endDate,
         sortAmount: filters.sortAmount, // Sorting by amount
         sortDate: filters.sortDate, // Sorting by date
       };
