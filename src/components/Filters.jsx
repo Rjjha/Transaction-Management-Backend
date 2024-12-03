@@ -1,6 +1,7 @@
 import React from "react";
 
 const Filters = ({ showFilters, setShowFilters, filters, setFilters }) => {
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
@@ -25,7 +26,7 @@ const Filters = ({ showFilters, setShowFilters, filters, setFilters }) => {
 
   const handleSortChange = (e) => {
     const { name, value } = e.target;
-
+    
     setFilters((prev) => ({
       ...prev,
       [name]: value,
@@ -166,8 +167,8 @@ const Filters = ({ showFilters, setShowFilters, filters, setFilters }) => {
             className="w-full px-3 py-2 border border-gray-300 rounded-md"
           >
             <option value="">None</option>
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
+            <option value="1">Ascending</option>
+            <option value="0">Descending</option>
           </select>
         </div>
 
@@ -182,8 +183,8 @@ const Filters = ({ showFilters, setShowFilters, filters, setFilters }) => {
             className="w-full px-3 py-2 border border-gray-300 rounded-md"
           >
             <option value="">None</option>
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
+            <option value="1">Ascending</option>
+            <option value="0">Descending</option>
           </select>
         </div>
       </div>

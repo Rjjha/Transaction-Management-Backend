@@ -14,7 +14,10 @@ const Dashboard = () => {
     endDate: "",
     minAmount: 0,
     maxAmount: 0,
+    sortAmount: "",
+    sortDate: "",
   });
+  
   const [transactions, setTransactions] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
