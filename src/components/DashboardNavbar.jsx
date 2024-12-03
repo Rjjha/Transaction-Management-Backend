@@ -5,7 +5,7 @@ import api from "../services/api";
 const DashboardNavbar = () => {
   const navigate = useNavigate();
 
-  const userName = localStorage.getItem("userName") || "User";
+  const userName = localStorage.getItem("userName") || "Admin";
   const [cronEnabled, setCronEnabled] = useState(
     localStorage.getItem("cronEnabled") === "true"
   );
@@ -156,7 +156,7 @@ const DashboardNavbar = () => {
 
         {/* User Info */}
         <div className="flex items-center gap-2">
-          <span className="text-sm">{userName}</span>
+          <span className="text-sm">Admin {userName}</span>
           <button
             className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg text-sm"
             onClick={handleLogout}

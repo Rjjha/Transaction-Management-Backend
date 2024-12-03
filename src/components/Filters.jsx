@@ -167,26 +167,12 @@ const Filters = ({ showFilters, setShowFilters, filters, setFilters }) => {
             className="w-full px-3 py-2 border border-gray-300 rounded-md"
           >
             <option value="">None</option>
-            <option value="1">Ascending</option>
-            <option value="0">Descending</option>
+            <option value="0">Ascending</option>
+            <option value="1">Descending</option>
           </select>
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Sort by Date
-          </label>
-          <select
-            name="sortDate"
-            value={filters.sortDate || ""}
-            onChange={handleSortChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md"
-          >
-            <option value="">None</option>
-            <option value="1">Ascending</option>
-            <option value="0">Descending</option>
-          </select>
-        </div>
+        
       </div>
     </div>
   );
