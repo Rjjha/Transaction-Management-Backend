@@ -156,7 +156,7 @@ const DashboardNavbar = () => {
 
         {/* User Info */}
         <div className="flex items-center gap-2">
-          <span className="text-sm">Admin {userName}</span>
+          <span className="text-sm">{userName}</span>
           <button
             className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg text-sm"
             onClick={handleLogout}
